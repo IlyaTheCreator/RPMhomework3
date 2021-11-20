@@ -98,7 +98,7 @@ namespace consoleapp
             if (_firstListItem == null)
                 throw new Exception("The list is empty :/");
 
-            if (index >= _length && index <= 0)
+            if (index >= _length || index <= 0)
                 throw new Exception("There's no element for that index.");
         }
         
